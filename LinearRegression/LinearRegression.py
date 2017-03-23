@@ -11,11 +11,12 @@ plt.plot(X, y, 'ro')
 plt.axis([140, 190, 45, 75])
 plt.xlabel('Height(cm)')
 plt.ylabel('Weight(Kg)')
-#plt.show()
+plt.show()
 
 #build Xbar
 one = np.ones((X.shape[0], 1))
 Xbar = np.concatenate((one, X), axis = 1)
+print (Xbar)
 
 #calculating weight of fitting line
 A = np.dot(Xbar.T, Xbar)
